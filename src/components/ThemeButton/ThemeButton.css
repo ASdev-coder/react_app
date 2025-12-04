@@ -1,0 +1,19 @@
+.btn-icon{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    font-size: 22px;
+}
+
+.btn-icon:hover{
+    color: orangered;
+} 

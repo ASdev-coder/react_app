@@ -1,0 +1,19 @@
+
+.btn-i18n{
+    background-color: transparent;
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.btn-i18n:hover {
+    background-color: #4CAF50;
+    color: white;
+}

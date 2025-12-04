@@ -1,0 +1,54 @@
+.todo{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form{
+    margin-bottom: 20px;
+}
+
+.todo-filter{
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.todo-item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+    border-bottom: 1px #ddd solid;
+}
+
+.remove-btn{
+    margin-left: auto;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.done{
+    text-decoration: line-through;
+}
+
+.error{
+    color: red;
+    font-size: .9em;
+}
+
+.todo-filter button {
+  background: #ddd;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.todo-filter button.active-filter {
+  background: dodgerblue;
+  color: white;
+}

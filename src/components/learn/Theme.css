@@ -1,0 +1,15 @@
+.block{
+    width: 200px;
+    padding: 30px;
+    border: 1px solid black;
+}
+
+.theme-dark{
+    background-color: black;
+    color: white;
+}
+
+.theme-dark button{
+    background-color: #333;
+    color: white;
+}
