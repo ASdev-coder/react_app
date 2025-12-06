@@ -7,6 +7,8 @@ import TodoList from "./components/todo/TodoList";
 import User from "./components/learn/User";
 import ThemeProvider from "./providers/ThemeProvider";
 import I18nProvider from "./providers/I18nProvider";
+import Register from "./pages/Register";
+import SelectDate from "./pages/SelectDate";
 
 const router = createBrowserRouter([
   {
@@ -15,16 +17,20 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: (
-          <TodoList />
-        ),
+        element: <TodoList />,
       },
       {
         path: "user",
-        element: (
-          <User />
-        ),
+        element: <User />,
       },
+      {
+        path: "registration",
+        element: <Register />,
+      },
+      {
+        path: "select-date",
+        element: <SelectDate />,
+      }
     ],
   },
 ]);

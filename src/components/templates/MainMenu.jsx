@@ -4,8 +4,9 @@ import { NavLink } from "react-router";
 const MainMenu = () => {
     return (
       <nav>
-        <NavLink to="/">home</NavLink>
-        <NavLink to="/user">user</NavLink>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/user">User</NavLink>
+        <NavLink to="/select-date">Date</NavLink>
       </nav>
     );
 }

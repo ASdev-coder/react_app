@@ -1,0 +1,11 @@
+.user-icon{
+    font-size: 24px;
+    color: #1890ff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.user-icon:hover{
+    color: #40a9ff;
+
+}
