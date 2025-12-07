@@ -7,6 +7,7 @@ const MainMenu = () => {
         <NavLink to="/">Home</NavLink>
         <NavLink to="/users">User</NavLink>
         <NavLink to="/select-date">Date</NavLink>
+        <NavLink to="/products">Products</NavLink>
       </nav>
     );
 }

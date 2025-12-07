@@ -5,6 +5,8 @@ import Users from "./pages/Users";
 import Register from "./pages/Register";
 import SelectDate from "./pages/SelectDate";
 import { getUsers } from "./loaders/usersLoaders";
+import { getProducts } from "./loaders/ProductsLoaders";
+import Products from "./pages/Products";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +29,11 @@ const router = createBrowserRouter([
       {
         path: "select-date",
         element: <SelectDate />,
+      },
+      {
+        path: "products",
+        element: <Products />,
+        loader: getProducts
       },
     ],
   },
