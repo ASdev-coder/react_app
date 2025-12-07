@@ -5,7 +5,7 @@ const MainMenu = () => {
     return (
       <nav>
         <NavLink to="/">Home</NavLink>
-        <NavLink to="/user">User</NavLink>
+        <NavLink to="/users">User</NavLink>
         <NavLink to="/select-date">Date</NavLink>
       </nav>
     );

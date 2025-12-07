@@ -21,7 +21,10 @@ function App() {
           <I18nButton />
         </div>
       </header>
-      <Outlet />
+      
+      <div className="container">
+        <Outlet />
+      </div>
     </>
   );
 }
