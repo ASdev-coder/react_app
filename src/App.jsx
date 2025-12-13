@@ -8,6 +8,7 @@ import I18nButton from "./components/I18n/I18nButton";
 import { Link } from "react-router";
 import { UserOutlined } from '@ant-design/icons';
 import './components/user-icon/UserIcon.css';
+import BasketButton from "./components/basket/BasketButton";
 
 function App() {
 
@@ -16,12 +17,15 @@ function App() {
       <header>
         <MainMenu />
         <div className="contexts">
-          <Link to="/registration"><UserOutlined className="user-icon"/></Link>
+          <BasketButton />
+          <Link to="/registration">
+            <UserOutlined className="user-icon" />
+          </Link>
           <ThemeButton />
           <I18nButton />
         </div>
       </header>
-      
+
       <div className="container">
         <Outlet />
       </div>

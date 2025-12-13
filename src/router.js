@@ -4,9 +4,16 @@ import TodoList from "./components/todo/TodoList";
 import Users from "./pages/Users";
 import Register from "./pages/Register";
 import SelectDate from "./pages/SelectDate";
-import { getUsers } from "./loaders/usersLoaders";
-import { getProducts } from "./loaders/ProductsLoaders";
+import { getSearchUsers, getUser, getUsers } from "./loaders/usersLoaders";
+import { getProduct, getProducts } from "./loaders/ProductsLoaders";
 import Products from "./pages/Products";
+import Weather from "./pages/Weather";
+import { getCityWeather } from "./loaders/WeatherInfo";
+import User from "./pages/User";
+import Product from "./pages/Product";
+import { Search } from "./pages/Search";
+import Basket from "./pages/Basket";
+
 
 const router = createBrowserRouter([
   {
@@ -20,7 +27,7 @@ const router = createBrowserRouter([
       {
         path: "users",
         element: <Users />,
-        loader: getUsers
+        loader: getUsers,
       },
       {
         path: "registration",
@@ -33,7 +40,31 @@ const router = createBrowserRouter([
       {
         path: "products",
         element: <Products />,
-        loader: getProducts
+        loader: getProducts,
+      },
+      {
+        path: "weather",
+        element: <Weather />,
+        loader: getCityWeather,
+      },
+      {
+        path: "users/:login",
+        loader: getUser,
+        element: <User />,
+      },
+      {
+        path: "search",
+        loader: getSearchUsers,
+        element: <Search />,
+      },
+      {
+        path: "products/:id",
+        loader: getProduct,
+        element: <Product />,
+      },
+      {
+        path: "basket",
+        element: <Basket />,
       },
     ],
   },
